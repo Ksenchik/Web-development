@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/public/styles.css" />
+    <title>Web Development</title>
+  </head>
+  <body class="bg-backgr">
+
+    <main>
+      <section class="home min-h-screen">
+        <div class="bacgr bg-[url(../public/assets/img/home-main.jpg)] w-full min-h-screen">
+          <div class="container">
+            <header class="px-5 flex justify-between items-center h-[125px]">
+              <div class="logo">
+                <svg class="w-[37px] h-[57px] fill-white">
+                  <use xlink:href="public/assets/sprite.svg#logo"></use>
+                </svg> 
+              </div>
+              <nav>
+                <ul class="flex gap-20 items-center">
+                  <li>
+                    <a class="header-link header-link--active" href="">Home</a>
+                  </li>
+                  <li>
+                    <a class="header-link" href="">Technologies</a>
+                  </li>
+                  <li>
+                    <a class="header-link" href="">Portfolio</a>
+                  </li>
+                  <li>
+                    <a class="header-link" href="">Process</a>
+                  </li>
+                  <li>
+                    <a class="header-link" href="">Contact</a>
+                  </li>
+                  <li>
+                    <ul class="menu">
+
+                      <li class="menu__item relative">
+                        <button class="menu__btn header-link group">Services
+                          <svg class="dropdown-arrow-bot w-4 h-4 fill-white inline group-hover:fill-brand-blue transition-all duration-300" >
+                            <use xlink:href="public/assets/sprite.svg#arrow-bot"></use>
+                          </svg> 
+                        </button>
+                        <div class="dropdown">
+                          <ul class="dropdown__list">
+                            <li class="dropdown__item py-2">
+                              <a href="#" class="header-link">Option 1</a>
+                            </li>
+                            <li class="dropdown__item py-2">
+                              <a href="#" class="header-link">Option 2</a>
+                            </li>
+                            <li class="dropdown__item py-2">
+                              <a href="#" class="header-link">Option 3</a>
+                            </li>
+                            <li class="dropdown__item py-2">
+                              <a href="#" class="header-link">Option 4</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                
+                    </ul>                   
+                  </li>
+                  <button class="btn px-9">Request</button>
+                </ul>
+              </nav>
+
+            </header>
+          </div>
+        </div>
+      </section>
+    </main>
+    
+
+
+
+
+    <script src="public/js/main.js" type="module"></script>
+  </body>
+</html>
+
+
+<!-- 
+<svg class="w-9 h-14 fill-white">
+  <use xlink:href="public/assets/sprite.svg#logo"></use>
+</svg> 
+-->

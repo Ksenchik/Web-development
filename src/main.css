@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+	@apply font-montserrat;
+}
+
+@layer components{
+  .header-link{
+    @apply py-2 text-white text-base font-medium opacity-60 border-b-2 border-transparent hover:text-brand-blue hover:border-brand-blue transition-all duration-300 ;
+  }
+  .btn{
+    @apply bg-brand-blue text-backgr text-[22px] py-4 px-9 rounded-2xl hover:bg-indigo-600 transition-all duration-300;
+  }
+  .dropdown{
+    @apply absolute left-0 top-[100%] w-20 bg-transparent opacity-0 invisible transition-all duration-300;
+  }
+}
+
+.header-link--active{
+  @apply text-brand-blue border-0 cursor-default;
+}
+
+.menu__btn--active{
+  @apply text-brand-blue;
+}
+
+.dropdown--active{
+  @apply opacity-100 visible ;
+}
+
+.menu__btn--active{
+  @apply text-brand-blue border-brand-blue;
+}
+
+.rotated{
+  @apply rotate-180 fill-brand-blue;
+}
+
+
