@@ -148,7 +148,7 @@ const dataItems = [
 
 const wrap = document.querySelector('.technologies');
 
- export function technology(){
+ export function technologies(){
   for( let i = 0; i < dataItems.length; i++){
     const item = create('div', 'technologies-item');
     item.classList.add(dataItems[i].category);
