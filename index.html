@@ -7,14 +7,14 @@
     <link rel="stylesheet" href="public/styles.css" />
     <title>Web Development</title>
   </head>
-  <body class="bg-backgr">
+  <body class="bg-backgr text-[#151515]">
 
     <main>
       <section class="home min-h-screen">
         <div class="bg-[url(../public/assets/img/home-main.jpg)] w-full min-h-screen">
-          <div class="">
-            <header class="container flex justify-between items-center h-[125px]">
-              <div class="logo z-20">
+          <div class="lg:flex flex-col lg:min-h-screen">
+            <header class="container flex justify-between items-center">
+              <div class="logo z-20 py-[36px]">
                 <svg class="w-[53px]  h-[57px] fill-white">
                   <use xlink:href="public/assets/sprite.svg#logo"></use>
                 </svg> 
@@ -81,82 +81,82 @@
               </div>
             </header>
 
-             <div class="relative">
+             <div class="relative flex-2-1-0">
               <div class="container w-full">
-                <h1 class="text-white text-[28px] md:text-[64px]  xl:text-[96px] font-extrabold max-w-5xl mt-[75px] md:mt-[90px] tracking-[2px] md:tracking-[5px] md:leading-snug sm:max-w-[400px] md:max-w-2xl xl:max-w-5xl">Develop. Design. Support 
+                <h1 class="text-white text-[28px] md:text-[64px]  xl:text-[96px] font-extrabold max-w-5xl mt-[75px]  md:mt-[90px] tracking-[2px] md:tracking-[5px] lg:tracking-[2px] md:leading-snug lg:leading-[1.1] sm:max-w-[400px] md:max-w-2xl xl:max-w-5xl">Develop. Design. Support 
                   <span class="inline-block opacity-70 leading-tight md:tracking-normal mt-3 md:mt-[30px] md:mb-[94px] text-base xl:text-xl text-white font-normal max-w-[400px] ">We are a multidisciplinary agency specializing in web and mobile development, as well as diverse design solutions across a range of</span>
                 </h1>
               </div>
-              <div class="h-[220px] w-full mt-4 sm:mt-9 overflow-hidden md:absolute md:w-[249px]  md:right-0 md:bottom-0">
-                <img class="object-cover object-center w-full h-full " src="public/assets/img/home-photo.jpg" alt="photo">
+              <div class="h-[220px] w-full sm:mt-9 overflow-hidden md:absolute md:w-[249px]  md:right-0 md:bottom-0 lg:h-[394px] lg:w-[268px] xl:w-[377px] xl:h-[427px] 2xl:w-[636px] 2xl:h-[527px ]">
+                <img class="object-cover object-center w-full h-full lg:object-left" src="public/assets/img/home-photo.jpg" alt="photo">
               </div>
              </div>
 
              <div class="lg:flex">
 
-              <div class="header-cart flex-1 pt-5 md:pt-12 pr-5 lg:pr-9 2xl:pr-36 pb-10 md:pb-12 pl-5 xl:pl-14 2xl:pl-36 bg-black transition-all duration-500 ">
-                <div class="lg:flex justify-between">
+              <div class="header-cart flex-2-1-0 pt-5 md:pt-12 pr-5 lg:pr-7 pb-10 md:pb-12 pl-5 xl:pl-14 bg-black transition-all duration-500 ">
+                <div class="relative lg:flex justify-between">
                   <div class="flex gap-x-5 xl:gap-x-16 md:gap-11">
-                    <p class="t text-white text-2xl md:text-[32px] xl:text-[44px]">01/<span class="text-sm opacity-70 xl:text-lg">03</span></p>
-                    <!-- <p class="text-white text-sm xl:text-base opacity-70 leading-tight w-[245px] sm:w-auto">We Leverage Modern Development <br> Tools To Deliver Exceptional Results</p> -->
+                    <p class="text-white text-2xl md:text-[32px] xl:text-[44px]">01/<span class="text-sm opacity-70 xl:text-lg">03</span></p>
+                    <p class="cart-info el--active lg:el--active lg:absolute lg:right-20 xl:right-28 text-white text-sm xl:text-base opacity-70 leading-tight w-[245px] sm:w-auto transition-all duration-300">We Leverage Modern Development <br> Tools To Deliver Exceptional Results</p>
                   </div>
-                  <!-- <div class="hidden lg:flex gap-5">
+                  <div class="cart-info el--active lg:el--active lg:absolute lg:right-0 hidden lg:flex xl:gap-5 transition-all duration-300">
                     <svg class="w-9 h-8 fill-white opacity-70 rotate-90">
                       <use xlink:href="public/assets/sprite.svg#arrow-bot"></use>
                     </svg> 
                     <svg class="w-9 h-8 fill-white opacity-70 -rotate-90">
                       <use xlink:href="public/assets/sprite.svg#arrow-bot"></use>
                     </svg> 
-                  </div> -->
+                  </div>
                 </div>
                 <p class="text-white font font-medium text-[22px] mt-4 md:mt-9 xl:mt-12 sm:mt-14 xl:text-4xl">WEB<br> DEVELOPMENT</p>
-                <div class="flex justify-between items-center mt-4 xl:mt-6">
-                  <p class="text-white text-base xl:text-xl">Web-site, App, Landing</p>
-                  <!-- <p class="text-white text-base opacity-70">more &#10230;</p> -->
+                <div class="relative flex justify-between items-center mt-4 xl:mt-6">
+                  <p class="whitespace-nowrap text-white text-base xl:text-xl">Web-site, App, Landing</p>
+                  <p class="cart-info el--active lg:el--active lg:absolute lg:right-0 text-white text-base opacity-70 transition-all duration-300">more &#10230;</p>
                 </div>
               </div>
 
-              <div class="header-cart flex-none pt-5 md:pt-12 pr-5 lg:pr-9 2xl:pr-36 pb-10 md:pb-12 pl-5 xl:pl-14 2xl:pl-36 bg-brand-blue transition-all duration-500 ">
-                <div class="lg:flex justify-between">
+              <div class="header-cart flex-1-1-0 pt-5 md:pt-12 pr-5 lg:pr-7 pb-10 md:pb-12 pl-5 xl:pl-14 bg-brand-blue transition-all duration-500 ">
+                <div class="relative lg:flex justify-between">
                   <div class="flex gap-x-5 xl:gap-x-16 md:gap-11">
-                    <p class="t text-white text-2xl md:text-[32px] xl:text-[44px]">02 /<span class="text-sm opacity-70 xl:text-lg">03</span></p>
-                    <!-- <p class="text-white text-sm xl:text-base opacity-70 leading-tight w-[245px] sm:w-auto">We Leverage Modern Development <br> Tools To Deliver Exceptional Results</p> -->
+                    <p class="text-white text-2xl md:text-[32px] xl:text-[44px]">02/<span class="text-sm opacity-70 xl:text-lg">03</span></p>
+                    <p class="cart-info el--inactive lg:absolute lg:right-20 xl:right-28 text-white text-sm xl:text-base opacity-70 leading-tight w-[245px] sm:w-auto transition-all duration-300">We Leverage Modern Development <br> Tools To Deliver Exceptional Results</p>
                   </div>
-                  <!-- <div class="hidden lg:flex gap-5">
+                  <div class="cart-info el--inactive hidden lg:flex xl:gap-5 transition-all duration-300">
                     <svg class="w-9 h-8 fill-white opacity-70 rotate-90">
                       <use xlink:href="public/assets/sprite.svg#arrow-bot"></use>
                     </svg> 
                     <svg class="w-9 h-8 fill-white opacity-70 -rotate-90">
                       <use xlink:href="public/assets/sprite.svg#arrow-bot"></use>
                     </svg> 
-                  </div> -->
+                  </div>
                 </div>
                 <p class="text-white font font-medium text-[22px] mt-4 md:mt-9 xl:mt-12 sm:mt-14 xl:text-4xl">MOBILE<br> DEVELOPMENT</p>
-                <div class="flex justify-between items-center mt-4 xl:mt-6">
-                  <p class="text-white text-base xl:text-xl">Android, IOS</p>
-                  <!-- <p class="text-white text-base opacity-70">more &#10230;</p> -->
+                <div class="relative flex justify-between items-center mt-4 xl:mt-6">
+                  <p class="whitespace-nowrap text-white text-base xl:text-xl">Android, IOS</p>
+                  <p class="cart-info el--inactive lg:absolute lg:right-0 text-white text-base opacity-70 transition-all duration-300">more &#10230;</p>
                 </div>
               </div>
 
-              <div class="header-cart flex-none pt-5 md:pt-12 pr-5 lg:pr-9 2xl:pr-36 pb-10 md:pb-12 pl-5 xl:pl-14 2xl:pl-36 bg-brand-red transition-all duration-500 ">
-                <div class="lg:flex justify-between">
+              <div class="header-cart flex-1-1-0 pt-5 md:pt-12 pr-5 lg:pr-7 pb-10 md:pb-12 pl-5 xl:pl-14 bg-brand-red transition-all duration-500 ">
+                <div class="relative lg:flex justify-between">
                   <div class="flex gap-x-5 xl:gap-x-16 md:gap-11">
-                    <p class="t text-white text-2xl md:text-[32px] xl:text-[44px]">03/<span class="text-sm opacity-70 xl:text-lg">03</span></p>
-                    <!-- <p class="text-white text-sm xl:text-base opacity-70 leading-tight w-[245px] sm:w-auto">We Leverage Modern Development <br> Tools To Deliver Exceptional Results</p> -->
+                    <p class="text-white text-2xl md:text-[32px] xl:text-[44px]">03/<span class="text-sm opacity-70 xl:text-lg">03</span></p>
+                    <p class="cart-info el--inactive lg:absolute lg:right-20 xl:right-28 text-white text-sm xl:text-base opacity-70 leading-tight w-[245px] sm:w-auto transition-all duration-300">We Leverage Modern Development <br> Tools To Deliver Exceptional Results</p>
                   </div>
-                  <!-- <div class="hidden lg:flex gap-5">
+                  <div class="cart-info el--inactive hidden lg:flex xl:gap-5 transition-all duration-300">
                     <svg class="w-9 h-8 fill-white opacity-70 rotate-90">
                       <use xlink:href="public/assets/sprite.svg#arrow-bot"></use>
                     </svg> 
                     <svg class="w-9 h-8 fill-white opacity-70 -rotate-90">
                       <use xlink:href="public/assets/sprite.svg#arrow-bot"></use>
                     </svg> 
-                  </div> -->
+                  </div>
                 </div>
                 <p class="text-white font font-medium text-[22px] mt-4 md:mt-9 xl:mt-12 sm:mt-14 xl:text-4xl">PRODUCT<br> DESIGN</p>
-                <div class="flex justify-between items-center mt-4 xl:mt-6">
-                  <p class="text-white text-base xl:text-xl">UX/UI, Graphic, Web</p>
-                  <!-- <p class="text-white text-base opacity-70">more &#10230;</p> -->
+                <div class="relative flex justify-between items-center mt-4 xl:mt-6">
+                  <p class="whitespace-nowrap text-white text-base xl:text-xl">UX/UI, Graphic, Web</p>
+                  <p class="cart-info el--inactive lg:absolute lg:right-0 text-white text-base opacity-70 transition-all duration-300">more &#10230;</p>
                 </div>
               </div>
 
@@ -165,6 +165,110 @@
           </div>
         </div>
       </section>
+      
+      <div class="blue-vertical"></div>
+
+      <section class="container section">
+        <div class="blue-horisontal"></div>
+        <div class="section-flex">
+          <div>
+            <h3 class="h3-title">Our technology</h3>
+            <p class="p-subtitle max-w-[210px] lg:max-w-full ">QUALITY PRODUCTS, EXCEPTIONAL RESULT</p>
+          </div>
+          <ul class="section-option-flex">
+            <li class="section-option technologies-option section-option--active" data-filter="all">ALL</li>
+            <li class="section-option technologies-option" data-filter="web">WEB DEVELOPMENT</li>
+            <li class="section-option technologies-option" data-filter="mobile">MOBILE DEVELOPMENT</li>
+            <li class="section-option technologies-option" data-filter="design">DESIGN </li>
+          </ul>
+        </div>
+
+        <div class="flex flex-col-reverse md:flex-row md:gap-3 md:mt-14 " >
+          <div class="rounded-xl overflow-hidden w-full h-[228px] md:h-[360px] xl:h-[537px] md:w-1/3 lg:w-1/4 xl:w-1/3">
+            <img class="w-full h-full object-cover" src="public/assets/img/technology-main.jpg" alt="">
+          </div>
+
+          <div class="technologies mt-5 md:mt-0 mb-11 md:mb-0 flex flex-wrap justify-around gap-x-2 gap-y-5 md:w-2/3 lg:w-3/4 xl:w-2/3">
+          </div>
+
+        </div>
+      </section>
+
+      <div class="blue-vertical"></div>
+
+      <section class="container section">
+        <div class="blue-horisontal"></div>
+        <div class="section-flex">
+          <div>
+            <h3 class="h3-title">Portfolio</h3>
+            <p class="p-subtitle max-w-[210px] lg:max-w-full ">THINGS WE'VE MADE</p>
+          </div>
+          <ul class="section-option-flex">
+            <li class="section-option section-option--active" >ALL</li>
+            <li class="section-option">WEB DEVELOPMENT</li>
+            <li class="section-option">MOBILE DEVELOPMENT</li>
+            <li class="section-option">DESIGN </li>
+          </ul>
+        </div>
+        <div class="portfolio__wrap mt-5 md:mt-11  gap-5 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
+
+          <div class="portfolio__item relative px-5 xl:px-11 py-5 xl:py-10 bg-brand-black rounded-xl overflow-hidden w-full sm:w-[438px] md:w-full h-[508px] lg:h-[650px] xl:h-[700px]">
+            <div class="portfolio__logo-wrap h-14 xl:h-[80px]">
+              <svg class="w-[75px] lg:w-[100px] xl:w-[150px] h-[24px] lg:h-[32px] xl:h-[48px] fill-white">
+                <use xlink:href="public/assets/sprite.svg#portfolio-defu"></use>
+              </svg> 
+            </div>
+            <p class="portfolio__name text-white text-[22px] md:text-[32px] xl:text-4xl">Furniture</p>
+            <p class="portfolio__description text-white text-base xl:text-xl mt-3 xl:mt-5">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+            <img class="portfolio__img absolute right-0 bottom-0 rounded-xl w-4/5" src="public/assets/img/portfolio-1.jpg" alt="">
+          </div>
+
+          <div class="portfolio__item relative px-5 xl:px-11 py-5 xl:py-10 bg-brand-blue rounded-xl overflow-hidden w-full sm:w-[438px] md:w-full h-[508px] lg:h-[650px] xl:h-[700px]">
+            <div class="portfolio__logo-wrap h-14 xl:h-[80px]">
+              <svg class="w-[75px] lg:w-[100px] xl:w-[150px] h-[24px] lg:h-[32px] xl:h-[48px] fill-white">
+                <use xlink:href="public/assets/sprite.svg#portfolio-recipe"></use>
+              </svg> 
+            </div>
+            <p class="portfolio__name text-white text-[22px] md:text-[32px] xl:text-4xl">RecipeRoute</p>
+            <p class="portfolio__description text-white text-base xl:text-xl mt-3 xl:mt-5">Create stunning, custom images with our neural network web service. Easy-to-use and perfect for advertising, design, and artistic expression</p>
+            <img class="portfolio__img absolute right-0 bottom-0 rounded-xl w-3/5" src="public/assets/img/portfolio-2.jpg" alt="">
+          </div>
+
+          <div class="portfolio__item hidden md:block relative px-5 xl:px-11 py-5 xl:py-10 bg-brand-red rounded-xl overflow-hidden w-full sm:w-[438px] md:w-full  h-[508px] lg:h-[650px] xl:h-[700px]">
+            <div class="portfolio__logo-wrap h-14 xl:h-[80px]">
+              <svg class="w-[32px] xl:w-[48px] h-[24px] lg:h-[32px] xl:h-[48px] fill-white">
+                <use xlink:href="public/assets/sprite.svg#portfolio-leasi"></use>
+              </svg> 
+            </div>
+            <p class="portfolio__name text-white text-[22px] md:text-[32px] xl:text-4xl">Leasi</p>
+            <p class="portfolio__description text-white text-base xl:text-xl mt-3 xl:mt-5">Revolutionize your learning with our mobile app. Learn on-the-go with interactive quizzes, personalized recommendations, and social learning tools</p>
+            <img class="portfolio__img absolute right-0 bottom-0 rounded-xl w-2/5" src="public/assets/img/portfolio-3.jpg" alt="">
+          </div>
+
+          <div class="portfolio__item hidden md:block xl:hidden relative px-5 xl:px-11 py-5 xl:py-10 bg-brand-black rounded-xl overflow-hidden w-full sm:w-[438px] md:w-full  h-[508px] lg:h-[650px] xl:h-[700px]">
+            <div class="portfolio__logo-wrap h-14 xl:h-[80px]">
+              <svg class="w-[32px] xl:w-[48px] xl:w-[150px] h-[24px] lg:h-[32px] xl:h-[48px] fill-white">
+                <use xlink:href="public/assets/sprite.svg#portfolio-health"></use>
+              </svg> 
+            </div>
+            <p class="portfolio__name text-white text-[22px] md:text-[32px] xl:text-4xl">HealthHarbor</p>
+            <p class="portfolio__description text-white text-base xl:text-xl mt-3 xl:mt-5">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+            <img class="portfolio__img absolute right-0 bottom-0 rounded-xl w-4/5" src="public/assets/img/portfolio-4.jpg" alt="">
+          </div>
+        </div>
+
+        <a class="btn block mx-auto mt-11 md:mt-12 w-40 xl:w-44 pl-[52px] xl:pl-[62px]" href="#">More</a>         
+      </section>
+
+      <div class="blue-vertical"></div>
+
+      <section class="container section">
+        <div class="blue-horisontal"></div>
+        <h3 class="h3-title mt-12">Process work</h3>
+        <p class="p-subtitle">WE PROVIDE END-TO-END <br>COLLABORATION FOR YOUR PROJECT</p>
+
+      </section>
+
     </main>
     
 
@@ -180,3 +284,4 @@
   <use xlink:href="public/assets/sprite.svg#logo"></use>
 </svg> 
 -->
+ 

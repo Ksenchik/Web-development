@@ -18,6 +18,32 @@ html {
   .dropdown{
     @apply absolute -left-6 xl:top-[120%] xl:bottom-auto bottom-[120%] w-36 xl:bg-transparent rounded-lg bg-gray-900  opacity-0 invisible transition-all duration-300;
   }
+  .section{
+    @apply py-8 md:py-16 lg:py-20;
+  }
+  .section-flex{
+    @apply mt-11 flex flex-col gap-6 md:flex-row md:justify-between md:mt-14 lg:mt-20;
+  }
+  .section-option-flex{
+    @apply flex flex-wrap xl:flex-nowrap content-start justify-start md:justify-end gap-x-10 xl:gap-x-16 2xl:gap-x-20 gap-y-6 max-w-xs xl:max-w-full;
+  }
+  .section-option{
+    @apply opacity-40 block h-8 text-sm lg:text-base hover:opacity-100 transition-all duration-300 cursor-pointer;
+  }
+  .h3-title{
+    @apply font-semibold text-2xl md:text-[40px] xl:text-[54px];
+  }
+  .p-subtitle{
+    @apply mt-4 md:mt-7 text-brand-blue text-sm md:text-lg ;
+  }
+}
+
+.el--inactive{
+  @apply opacity-0 invisible ;
+}
+
+.el--active{
+  @apply opacity-100 visible;
 }
 
 .header__modal--active{
@@ -53,5 +79,28 @@ html {
 .burger-3--active{
   @apply -rotate-45 top-[17px];
 }
-
+.blue-vertical{
+  @apply bg-brand-blue w-[2px] h-[80px] mx-auto;
+}
+.blue-horisontal{
+  @apply bg-brand-blue h-[2px] w-[80px];
+}
+.section-option--active{
+  @apply text-black opacity-100 pb-[3px] border-b border-black ;
+}
+.technologies-item{
+  @apply flex flex-col justify-between items-center w-[77px] h-[66px] sm:h-[78px] lg:w-[80px] lg:h-[78px] xl:w-[91px] xl:h-[97px] 2xl:w-[119px] 2xl:h-[97px];
+}
+.technology-img-wrap{
+  @apply w-full h-9 sm:h-12 xl:h-16;
+}
+.technology-img{
+  @apply w-full h-full object-contain;
+}
+.technology-name{
+  @apply text-sm xl:text-base;
+}
+.hide{
+  @apply hidden;
+}
 
