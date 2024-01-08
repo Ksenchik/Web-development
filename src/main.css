@@ -103,4 +103,7 @@ html {
 .hide{
   @apply hidden;
 }
+.work-item{
+  @apply bg-neutral-100 text-brand-black flex items-center rounded-xl text-xl pl-11 md:text-2xl w-[300px] h-[96px] md:w-[333px] md:h-[140px] 2xl:w-[398px];
+}
 
