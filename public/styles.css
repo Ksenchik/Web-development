@@ -1187,10 +1187,6 @@ video {
   padding-left: 1.5rem;
 }
 
-.pl-\[52px\]{
-  padding-left: 52px;
-}
-
 .pl-\[59px\]{
   padding-left: 59px;
 }
@@ -1285,6 +1281,18 @@ video {
 
 html{
   font-family: Montserrat, sans-serif;
+}
+
+.btn-disabled{
+  cursor: default;
+  border-radius: 1rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(203 203 205 / var(--tw-bg-opacity));
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 2.25rem;
+  padding-right: 2.25rem;
+  font-size: 22px;
 }
 
 .el--inactive{
@@ -1940,10 +1948,6 @@ html{
 
   .xl\:pl-14{
     padding-left: 3.5rem;
-  }
-
-  .xl\:pl-\[62px\]{
-    padding-left: 62px;
   }
 
   .xl\:pt-0{

@@ -27,6 +27,7 @@ module.exports = {
         "brand-black": "#151515",
         "brand-grey": "#F5F5F5",
         "backgr": "#F9F9FB",
+        "brand-disabled": "#cbcbcd",
       },
       fontFamily: {
         "montserrat": ['Montserrat', 'sans-serif'],

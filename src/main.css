@@ -38,6 +38,10 @@ html {
   }
 }
 
+.btn-disabled{
+  @apply bg-brand-disabled text-[22px]  py-4 px-9 rounded-2xl cursor-default;
+}
+
 .el--inactive{
   @apply opacity-0 invisible ;
 }

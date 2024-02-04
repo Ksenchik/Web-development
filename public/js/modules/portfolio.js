@@ -66,28 +66,90 @@ const dataItemsProject = [
     category: 'web',
   },
 ]
-
-const wrap = document.querySelector('.portfolio__wrap');
-
 export function portfolio() {
-  for( let i = 0; i < dataItemsProject.length; i++){
-    const item = create('div', 'portfolio__item');
-    item.classList.add(dataItemsProject[i].category);
-    item.style.backgroundColor = dataItemsProject[i].bg;
-    const logoWrap = create('div', 'portfolio__logo-wrap');
-    const logo = create('img', 'portfolio__logo', {src: dataItemsProject[i].logo});
-    const name = create('p', 'portfolio__name', {innerHTML: dataItemsProject[i].name});
-    const text = create('p', 'portfolio__description', {innerHTML: dataItemsProject[i].text});
-    const imgWrap = create('div', 'portfolio__img-wrap');
-    const img = create('img', 'portfolio__img', {src: dataItemsProject[i].img});
+  const wrap = document.querySelector('.portfolio__wrap');
 
+  const addPortfolioItems = (numItemsToAdd) => {
+    const moreButton = document.querySelector('.portfolio-more');
+    const portfolioItems = wrap.querySelectorAll('.portfolio__item');
+    const currentPosition = portfolioItems.length; // Определение текущей позиции
 
-    wrap.append(item);
-    item.append(logoWrap);
-    logoWrap.append(logo);
-    item.append(name);
-    item.append(text);
-    item.append(imgWrap);
-    imgWrap.append(img)
-  }
+    for (let i = currentPosition; i < currentPosition + numItemsToAdd && i < dataItemsProject.length; i++) {
+      if (portfolioItems.length < dataItemsProject.length) {
+        const item = create('div', 'portfolio__item');
+        item.classList.add(dataItemsProject[i].category);
+        item.style.background = dataItemsProject[i].bg;
+
+        const logoWrap = create('div', 'portfolio__logo-wrap');
+        const logo = create('img', 'portfolio__logo', { src: dataItemsProject[i].logo });
+        const name = create('p', 'portfolio__name', { innerHTML: dataItemsProject[i].name });
+        const text = create('p', 'portfolio__description', { innerHTML: dataItemsProject[i].text });
+        const imgWrap = create('div', 'portfolio__img-wrap');
+        const img = create('img', 'portfolio__img', { src: dataItemsProject[i].img });
+
+        logoWrap.appendChild(logo);
+        imgWrap.appendChild(img);
+        item.appendChild(logoWrap);
+        item.appendChild(name);
+        item.appendChild(text);
+        item.appendChild(imgWrap);
+
+        wrap.appendChild(item);
+      }
+    }
+    
+    let renderedItem = document.getElementsByClassName('portfolio__item')
+    
+    if (renderedItem.length >= dataItemsProject.length) {
+      moreButton.classList.remove('btn');
+      moreButton.classList.add('btn-disabled');
+      moreButton.disabled = true;
+    } else {
+      moreButton.classList.add('btn');
+      moreButton.classList.remove('btn-disabled');
+      moreButton.disabled = false;
+    }
+  };
+
+  window.addEventListener('load', () => {
+    if (window.innerWidth >= 1440) {
+      addPortfolioItems(3);
+    } else {
+      addPortfolioItems(2);
+    }
+  });
+
+  const moreButton = document.querySelector('.portfolio-more');
+  moreButton.addEventListener('click', () => {
+    if (window.innerWidth >= 1440) {
+      addPortfolioItems(3);
+    } else if (window.innerWidth >= 320) {
+      addPortfolioItems(2);
+    }
+  });
+
+  const buttons = document.querySelectorAll(".portfolio-option");
+
+  buttons.forEach((button) => {
+    button.addEventListener("click", () => {
+      buttons.forEach((btn) => {
+        btn.classList.remove("section-option--active");
+      });
+      button.classList.add("section-option--active");
+
+      const currentCategory = button.dataset.filter;
+      const allItems = Array.from(wrap.getElementsByClassName("portfolio__item"));
+
+      allItems.forEach((item) => {
+        const isItemFiltered = !item.classList.contains(currentCategory);
+        const isShowAll = currentCategory === "all";
+        if (isItemFiltered && !isShowAll) {
+          item.classList.add("hide");
+        } else {
+          item.classList.remove("hide");
+        }
+      });
+    });
+  });
 }
+
