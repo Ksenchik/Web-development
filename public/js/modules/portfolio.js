@@ -72,7 +72,7 @@ export function portfolio() {
   const addPortfolioItems = (numItemsToAdd) => {
     const moreButton = document.querySelector('.portfolio-more');
     const portfolioItems = wrap.querySelectorAll('.portfolio__item');
-    const currentPosition = portfolioItems.length; // Определение текущей позиции
+    const currentPosition = portfolioItems.length;
 
     for (let i = currentPosition; i < currentPosition + numItemsToAdd && i < dataItemsProject.length; i++) {
       if (portfolioItems.length < dataItemsProject.length) {

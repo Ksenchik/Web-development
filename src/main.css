@@ -108,7 +108,7 @@ html {
   @apply hidden;
 }
 .work-item{
-  @apply bg-neutral-100 text-brand-black flex items-center rounded-xl text-xl pl-11 md:text-2xl w-[300px] h-[96px] md:w-[333px] md:h-[140px] 2xl:w-[398px];
+  @apply bg-neutral-100 text-brand-black hover:bg-brand-blue hover:text-white hover:pl-20 transition-all duration-500 overflow-hidden flex items-center rounded-xl text-xl pl-11 md:text-2xl w-[300px] h-[96px] md:w-[333px] md:h-[140px] 2xl:w-[398px];
 }
 .portfolio__item{
   @apply relative px-5 xl:px-11 py-5 xl:py-10 bg-brand-black rounded-xl overflow-hidden w-full sm:w-[438px] md:w-full h-[508px] lg:h-[650px] xl:h-[700px];
