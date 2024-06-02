@@ -28,6 +28,7 @@ module.exports = {
         "brand-grey": "#F5F5F5",
         "backgr": "#F9F9FB",
         "brand-disabled": "#cbcbcd",
+        "bgsubmodal": "rgba(0, 0, 0, 0.7)",
       },
       fontFamily: {
         "montserrat": ['Montserrat', 'sans-serif'],
@@ -35,6 +36,11 @@ module.exports = {
       flex: {
         '2-1-0': '2 1 0%',
         '1-1-0': '1 1 0%',
+      },
+      width: {
+        'w120%': '120%',
+        'w560': '560px',
+        'w720': '720px'
       },
     },
   },

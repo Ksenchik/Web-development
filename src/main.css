@@ -16,7 +16,7 @@ html {
     @apply bg-brand-blue text-backgr text-[22px] py-4 px-9 rounded-2xl hover:bg-indigo-600 transition-all duration-300;
   }
   .dropdown{
-    @apply absolute -left-6 xl:top-[120%] xl:bottom-auto bottom-[120%] w-36 xl:bg-transparent rounded-lg bg-gray-900  opacity-0 invisible transition-all duration-300;
+    @apply absolute -left-6 xl:top-[120%] xl:bottom-auto bottom-[120%] w-36  rounded-lg bg-gray-900  opacity-0 invisible transition-all duration-300;
   }
   .section{
     @apply py-8 md:py-16 lg:py-20;
@@ -35,6 +35,15 @@ html {
   }
   .p-subtitle{
     @apply mt-4 md:mt-7 text-brand-blue text-sm md:text-lg ;
+  }
+  .form-input::placeholder{
+    @apply text-brand-black text-xl;
+  }
+  .footer-link{
+    @apply text-white text-base border-b-2 border-transparent hover:text-brand-blue hover:border-brand-blue transition-all duration-300;
+  }
+  .footer-info{
+    @apply text-brand-grey text-xs opacity-30;
   }
 }
 
@@ -106,6 +115,9 @@ html {
 }
 .hide{
   @apply hidden;
+}
+.over-hidden{
+  @apply overflow-hidden;
 }
 .work-item{
   @apply bg-neutral-100 text-brand-black hover:bg-brand-blue hover:text-white hover:pl-20 transition-all duration-500 overflow-hidden flex items-center rounded-xl text-xl pl-11 md:text-2xl w-[300px] h-[96px] md:w-[333px] md:h-[140px] 2xl:w-[398px];
